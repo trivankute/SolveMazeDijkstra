@@ -349,8 +349,8 @@ findButton.onclick = () =>{
         // create prev
         let prev = []
         // define dX, dY
-        let dX = [-1,0,1,0]
-        let dY = [0,-1,0,1]
+        let dX = [-1,0,1,0,-1,-1,1,1]
+        let dY = [0,-1,0,1,-1,1,-1,1]
         // create vis
         let vis = []
         for(let i = 0;i<height*width;i++)
@@ -358,7 +358,7 @@ findButton.onclick = () =>{
             let currHeight = Math.floor(i/height)
             let currWidth = i%width
             let smallVis = []
-            for(let j = 0;j<4;j++)
+            for(let j = 0;j<8;j++)
             {
                 let newHeight = dX[j]
                 newHeight += currHeight 
