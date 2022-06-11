@@ -364,7 +364,7 @@ findButton.onclick = () =>{
                 newHeight += currHeight 
                 let newWidth = dY[j]
                 newWidth += currWidth
-                if(newHeight<0||newHeight>=height||newWidth<0||newWidth>width) continue
+                if(newHeight<0||newHeight>=height||newWidth<0||newWidth>=width) continue
                 if(array[newHeight][newWidth]===3) continue
                 smallVis.push(newHeight*height + newWidth)
             }
